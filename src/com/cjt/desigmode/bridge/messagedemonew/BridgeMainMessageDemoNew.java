@@ -1,7 +1,14 @@
 package com.cjt.desigmode.bridge.messagedemonew;
 
 /**
- * 桥接模式，
+ * 桥接模式：
+ * AbsMessageMode最为桥接类。
+ * 抽象类：AbsMessageMode消息重要方式。对IMessageType的聚合。
+ * 接口：IMessageType消息类型。
+ *
+ * 场景：
+ * 消息类型：电话、email
+ * 消息重要方式：普通、紧急、特急
  *
  */
 public class BridgeMainMessageDemoNew {
