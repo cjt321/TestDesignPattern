@@ -1,4 +1,4 @@
-package com.cjt.desigmode.decorator;
+package com.cjt.desigmode.decorator.milktea;
 
 /**
  * 装饰者模式。

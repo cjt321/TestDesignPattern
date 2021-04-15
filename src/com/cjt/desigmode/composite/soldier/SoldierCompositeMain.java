@@ -1,4 +1,4 @@
-package com.cjt.desigmode.composite;
+package com.cjt.desigmode.composite.soldier;
 
 import jdk.jshell.spi.ExecutionControl;
 
@@ -42,8 +42,6 @@ public class SoldierCompositeMain {
 //军队组合抽象类。
 abstract class TroopsComposite {
 
-    //protected List<TroopsComposite> troopsComposites = new ArrayList<>();
-
     protected abstract void add(TroopsComposite troopsComposite) throws ExecutionControl.NotImplementedException;
 
     protected abstract List<TroopsComposite> getChildren() throws ExecutionControl.NotImplementedException;
@@ -53,7 +51,7 @@ abstract class TroopsComposite {
     protected abstract void print();
 }
 
-//军
+//军，节点类/容器
 class Army extends TroopsComposite {
 
     private String name;
@@ -87,7 +85,7 @@ class Army extends TroopsComposite {
     }
 }
 
-//旅
+//旅，节点类/容器
 class Force extends TroopsComposite {
 
     private String name;
@@ -121,7 +119,7 @@ class Force extends TroopsComposite {
     }
 }
 
-//团
+//团，节点类/容器
 class Roll extends TroopsComposite{
 
     private String name;
